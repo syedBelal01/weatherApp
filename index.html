@@ -148,7 +148,7 @@
                         <button class="read-more ">read more</button>
                     </div>
                     <div style="position: absolute; bottom: 20px;left: 20px;color: white; font-weight: 600;">
-                        <p class="display">Thunder</p>
+                        <p class="display">Thunder <br><span style="font-size: 30px;">Delhi</span></p>
                     </div>
                 </div>
 
@@ -164,7 +164,7 @@
                     </div>
                     <div
                         style="position: absolute; bottom: 20px;left: 20px;color: white; font-size: 24; font-weight: 600;">
-                        <p class="display">Cloudstorms in<br> manipur</p>
+                        <p class="display">Cloudstorms in<br> <span style="font-size: 30px;">manipur</span></p>
                     </div>
                 </div>
 
@@ -180,7 +180,7 @@
                     </div>
                     <div
                         style="position: absolute; bottom: 20px;left: 20px;color: white; font-size: 24; font-weight: 600;">
-                        <p class="display">It’s Summer season<br> in Mumbai</p>
+                        <p class="display">It’s Summer season in<br> <span style="font-size: 30px;"> Mumbai</span></p>
                     </div>
                 </div>
 
@@ -246,12 +246,12 @@
                         let resp = JSON.parse(this.responseText)
                         console.log(resp.current)
                         document.getElementById(`city-${cities[i]}`).innerHTML =
-                            resp.current.temp_c+"<sup>&#176</sup>";
+                            resp.current.temp_c.toFixed()+"<sup>&#176</sup>";
                         //document.querySelector('.date').innerHTML = convertDate(resp.current.last_updated);
                         document.getElementById(`date-${cities[i]}`).innerHTML = convertDate(resp.current.last_updated);
                         const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                         let day = weekday[d.getDay()];
-                        document.getElementById("day").innerHTML = day+" ";
+                        document.getElementById("day").innerHTML =d.getHours()+":"+d.getMinutes()+" "+ day+" ";
 
 
 

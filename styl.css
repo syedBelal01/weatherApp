@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inter,sans-serif;
 }
 
 .Navbar {
@@ -223,7 +226,7 @@ header .headerSecond .headerSecondInternal .sunlog {
   border: 1px solid white;
   z-index: 200;
   padding: 10px 20px;
-  font-size: 22px;
+  font-size: 18px;
   border-radius: 10px;
 }
 
