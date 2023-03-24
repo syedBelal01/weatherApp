@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="./styl.css">
+
+
+
+</head>
+
+<body onload="loadDoc()">
+    <nav class="Navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">News</a></li>
+
+        </ul>
+
+    </nav>
+    <header class="header">
+        <div class="headerFirst">
+            <div class="enternalheader">
+                <p class="headerHeading">Wheather Details</p>
+                <p class="content"><span>Cloudy</span><span id="cloud-mumbai">10%</span></p>
+                <p class="content"><span>Humidity</span><span id="humidity-mumbai">62%</span></p>
+                <p class="content"><span>Wind</span><span id="wind-mumbai">8km/h</span></p>
+            </div>
+        </div>
+        <div class="headerSecond">
+            <div class="headerSecondInternal">
+
+                <p class="headerSecondInternalheading" id="city-mumbai">32<sup>&#176</sup></p>
+                <div class="headerSecondInternalint" style="">
+                    <div>
+                        <p class="mumbai">Mumbai</p>
+                        <p style="font-size: 12px; padding: 0px 5px;"> <span id="day"> thuesday &nbsp;</span><span
+                                id="date-mumbai"> 00/02/23</span></p>
+                    </div>
+                    <div class="sunlog">
+                        <img src="./sun.png" alt="error" style="height: 100%;width: 100%;">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </header>
+    <section class="Section">
+        <h1 style="text-align: center; font-size: 48px; color: #110041;">Cities</h1>
+        <div class="SectionCardHead">
+            <div class="card fade-in">
+                <div style="position: relative;">
+                    <div>
+                        <img id="changeImg"
+                            style="height: 200px; width: 206px; border-top-left-radius: 10px;border-top-right-radius: 10px;"
+                            src="./Rectangle1.png" alt="">
+                    </div>
+                    <div style="position: absolute; bottom: 20px;left: 20px;color: white; font-weight: 600;">
+                        <p id="weather-pune">Thunder</p>
+                    </div>
+                </div>
+                <div style="display:flex; align-Items:flex-end;justify-content:space-between">
+                    <p style="font-size: 50px;font-weight: 600;padding-left: 20px;">
+                        <span id="city-pune">42<sup>&#176</sup></span>
+                    </p>
+                    <p style="display: flex;flex-direction: column;padding-right: 20px; padding-bottom: 9px;"><span
+                            style="font-size: 20px;font-weight: 600;">pune</span><span id="date-pune"
+                            style="font-size: 14px;">9/03/23</span></p>
+                </div>
+            </div>
+            <div class="card fade-in">
+                <div style="position: relative;">
+                    <div>
+                        <img id="changeImg1"
+                            style="height: 200px; width: 206px; border-top-left-radius: 10px;border-top-right-radius: 10px;"
+                            src="./Rectangle2.png" alt="">
+                    </div>
+                    <div style="position: absolute; bottom: 20px;left: 20px;color: white; font-weight: 600;">
+                        <p id="weather-chennai">Cloudy</p>
+                    </div>
+                </div>
+                <div style="display:flex; align-Items:flex-end;justify-content:space-between">
+                    <p style="font-size: 50px;font-weight: 600;padding-left: 20px;">
+                        <span id="city-chennai">42<sup>&#176</sup></span>
+                    </p>
+                    <p style="display: flex;flex-direction: column;padding-right: 20px; padding-bottom: 9px;"><span
+                            style="font-size: 20px;font-weight: 600;">chennai</span><span id="date-chennai"
+                            style="font-size: 14px;"> 9/03/23</span></p>
+                </div>
+            </div>
+            <div class="card fade-in">
+                <div style="position: relative;">
+                    <div>
+                        <img id='changeImg3'
+                            style="height: 200px; width: 206px; border-top-left-radius: 10px;border-top-right-radius: 10px;"
+                            src="./sunny.jpg" alt="">
+                    </div>
+                    <div style="position: absolute; bottom: 20px;left: 20px;color: white; font-weight: 600;">
+                        <p id="weather-jaipur">Sunny</p>
+                    </div>
+                </div>
+                <div style="display:flex; align-Items:flex-end;justify-content:space-between">
+                    <p style="font-size: 50px;font-weight: 600;padding-left: 20px;">
+                        <span id="city-jaipur">42<sup>&#176</sup></span>
+                    </p>
+                    <p style="display: flex;flex-direction: column;padding-right: 20px; padding-bottom: 9px;"><span
+                            style="font-size: 20px;font-weight: 600;">jaipur</span><span id="date-jaipur"
+                            style="font-size: 14px;">9/03/23</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="search">
+            <div class="dev" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+                <input type="text" class="searchTerm" placeholder="Search City">
+                <button type="submit" class="searchButton">
+                    <img src="./search.png" style="height: 100%;width: 100%;" alt="">
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="lastsection">
+        <img src="./earth.png" alt="error" style="height: 50%; width: 50%;">
+    </div>
+
+    <section class="Section">
+        <h1 style="text-align: center; font-size: 48px; color: #110041;">News</h1>
+        <div class="SectionCardHead">
+            <div class="fade-in fadehover">
+                <div style="position: relative;">
+                    <div>
+                        <img style="height: 395px; width: 293px; border-radius: 12px; border-top-right-radius: 10px;"
+                            src="./Rectangle1.png" alt="">
+                    </div>
+                    <div class="read">
+                        <button class="read-more ">read more</button>
+                    </div>
+                    <div style="position: absolute; bottom: 20px;left: 20px;color: white; font-weight: 600;">
+                        <p class="display">Thunder</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fade-in fadehover">
+                <div style="position: relative;">
+                    <div>
+                        <img style="height: 395px; width: 293px; border-radius: 12px; border-top-right-radius: 10px;"
+                            src="./Rectangle2.png" alt="">
+                    </div>
+                    <div class="read">
+                        <button class="read-more ">read more</button>
+                    </div>
+                    <div
+                        style="position: absolute; bottom: 20px;left: 20px;color: white; font-size: 24; font-weight: 600;">
+                        <p class="display">Cloudstorms in<br> manipur</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="fade-in fadehover">
+                <div style="position: relative;">
+                    <div>
+                        <img style="height: 395px; width: 293px; border-radius: 12px;border-top-right-radius: 10px;"
+                            src="./sunny.jpg" alt="">
+                    </div>
+                    <div class="read">
+                        <button class="read-more ">read more</button>
+                    </div>
+                    <div
+                        style="position: absolute; bottom: 20px;left: 20px;color: white; font-size: 24; font-weight: 600;">
+                        <p class="display">It’s Summer season<br> in Mumbai</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <div class="lastsection1">
+        <div>
+            <p style="font-size: 36; font-weight: 400; color: #fff; margin-top: 40px;">Weatherapp</p>
+        </div>
+        <div style="display: flex;">
+            <div style="margin-top: 40px;">
+                <p style="color: #fff;">Home</p>
+                <p style="color: #fff;">Cities</p>
+                <p style="color: #fff;">News</p>
+            </div>
+            <div style="margin-top: 40px; margin-left: 30px;">
+                <p style="color: #fff;">Contact us</p>
+                <p style="color: #fff;">FAQs</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const cards = document.querySelectorAll('.fade-in');
+
+        function fadeInCard() {
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardBottom = card.getBoundingClientRect().bottom;
+
+                if (cardTop < window.innerHeight && cardBottom >= 0) {
+                    card.style.opacity = 1;
+                }
+            });
+        }
+
+        document.addEventListener('scroll', fadeInCard);
+    </script>
+    <script>
+        function convertDate(inputFormat) {
+  function pad(s) { return (s < 10) ? '0' + s : s; }
+  var d = new Date(inputFormat)
+  return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/')
+}
+        function loadDoc() {
+            let key = "7f81d6800ecc42029c5182325232303"
+            var cloudyImg = "./Rectangle1.png"
+            var ThunderImg = "./Rectangle2.png"
+            var humidityImg = "./sunny.jpg"
+
+            let cities = ['mumbai', 'pune', 'chennai', 'jaipur'];
+            for (let i = 0; i <= cities.length - 1; i++) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        const d = new Date();
+                        let resp = JSON.parse(this.responseText)
+                        console.log(resp.current)
+                        document.getElementById(`city-${cities[i]}`).innerHTML =
+                            resp.current.temp_c+"<sup>&#176</sup>";
+                        //document.querySelector('.date').innerHTML = convertDate(resp.current.last_updated);
+                        document.getElementById(`date-${cities[i]}`).innerHTML = convertDate(resp.current.last_updated);
+                        const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                        let day = weekday[d.getDay()];
+                        document.getElementById("day").innerHTML = day+" ";
+
+
+
+                        if (i < 1) {
+
+                            document.getElementById(`humidity-${cities[i]}`).innerHTML =
+                                resp.current.humidity;
+                            document.getElementById(`cloud-${cities[i]}`).innerHTML =
+                                resp.current.cloud;
+                            document.getElementById(`wind-${cities[i]}`).innerHTML =
+                                resp.current.wind_kph;
+                        } else {
+                            if (resp.current.humidity > 70) {
+                                document.getElementById(`weather-${cities[i]}`).innerHTML =
+                                    'Humid';
+                                document.querySelector(`#changeImg3`).setAttribute('src', ThunderImg)
+
+                            } else if (resp.current.cloud > 20) {
+                                document.getElementById(`weather-${cities[i]}`).innerHTML =
+                                    'Cloudy';
+                                document.querySelector(`#changeImg1`).setAttribute('src', cloudyImg)
+                            } else {
+                                document.getElementById(`weather-${cities[i]}`).innerHTML =
+                                    'Sunny';
+                                document.querySelector(`#changeImg`).setAttribute('src', humidityImg)
+                            }
+                        }
+                    }
+                };
+                xhttp.open("GET", `http://api.weatherapi.com/v1/current.json?key=7f81d6800ecc42029c5182325232303&q=${cities[i]}&aqi=no`, true);
+                xhttp.send();
+            }
+
+
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
